@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_anim_verison1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="StartAnim1"/>
+
+        <Button
+            android:id="@+id/start_anim_verison2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="StartAnim2"/>
+
+        <Button
+            android:id="@+id/start_anim_verison3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="StartAnim3"/>
+    </LinearLayout>
+
+    <com.music.widget.version1.MusicWidgetRotateImageView
+        android:id="@+id/album_anim_verison1"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_centerInParent="true"></com.music.widget.version1.MusicWidgetRotateImageView>
+
+    <com.music.widget.version2.CustomScaleAnimView
+        android:id="@+id/album_anim_verison2"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></com.music.widget.version2.CustomScaleAnimView>
+
+    <com.music.widget.version3.CircleAlbumSwitchView
+        android:id="@+id/album_anim_verison3"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></com.music.widget.version3.CircleAlbumSwitchView>
+</RelativeLayout>
